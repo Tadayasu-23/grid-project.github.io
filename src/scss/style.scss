@@ -69,15 +69,15 @@ html, body {
 	grid-column: 5/6;
 	padding: 0 15px 0 0;
 	display: flex;
+  	justify-content: space-between;
 }
 .header_social{
 	display: inline-block;
-	justify-content: space-between;
 }
 .header_image
 	 {
 }
-.header_image svg { 
+.header_image svg {
 	height: 32px;
 	fill: white;
 	opacity: 30%;
@@ -661,7 +661,7 @@ line-height: 0.8;
 			.main_container {
 				max-width: 100%px;
 				height: 996px;
-				margin: 50px auto;
+				margin: 49px auto;
 			}
 			.header{
 				grid-template: 50px / 1fr 2fr 2fr 1fr;
@@ -697,7 +697,7 @@ line-height: 0.8;
 
 
 			.aboutMe_container {
-				background: url('../src/images/back101.jpg') no-repeat;
+				background: url('../src/images/back101.jpg') 0 0 / cover no-repeat;
 				margin: 0 auto;
 				padding: 15px 0 0 0;
 				height: 468px;
@@ -738,7 +738,8 @@ line-height: 0.8;
 				width: 100%;
 				height: 1069px;
 				margin: 0 auto 0;
-				background: url('../src/images/tree768.jpg') 0 0 /100% auto no-repeat;
+				background: url('../src/images/hand768.png') center bottom/ auto 315px no-repeat,
+				url("../src/images/tree768.jpg") 0 0/cover no-repeat;
 			}
 			.myskill_content {
 				padding: 0;
@@ -775,7 +776,7 @@ line-height: 0.8;
 					grid-row: 3/4;
 					justify-self: center;
 				}
-				}
+			}
 				.myskill_hand {
 					display: none;
 				}
@@ -830,6 +831,7 @@ line-height: 0.8;
 					grid-row: 1/2;
 				}
 				.myWork_item {
+					background: url('../src/images/1800/PrewWork1.jpg');
 					background-repeat: no-repeat;
 					background-position: left bottom;
 					background-size: auto 100%;
