@@ -68,15 +68,16 @@ html, body {
 .header_socials {
 	grid-column: 5/6;
 	padding: 0 15px 0 0;
+	display: flex;
 }
 .header_social{
 	display: inline-block;
+	justify-content: space-between;
 }
 .header_image
 	 {
 }
-.header_image svg {
-	margin: 0 0 0 40px; 
+.header_image svg { 
 	height: 32px;
 	fill: white;
 	opacity: 30%;
@@ -655,6 +656,7 @@ line-height: 0.8;
 		@media(max-width: 768px) {
 			.wrapper {
 				background: url('../src/images/Background768.jpg') no-repeat;
+				width: 100%;
 			}
 			.main_container {
 				max-width: 100%px;
